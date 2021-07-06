@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+.part{
+    width: 960px;
+    border: 1px solid blue;
+    flex-wrap: wrap;
+    margin:auto;
+}
+.item{
+    display: flex;
+    border: 1px solid red;
+    margin: 10px;
+    padding: 10px;
+    background-image: url("bg.png");
+    background-repeat: repeat-y;
+}
+
+.item .pic{
+    width: 50%;
+    background-color: chartreuse;
+}
+
+.item .pic img{
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.item .intro{
+    width: 50%;
+    padding: 10px;
+}
+.part .item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+</style>
+
+<div class="part">
+    <div class="item">
+        <div class="pic">
+            <img src="design_1534324364.jpg" width="100px">
+        </div>
+        <div class="intro">
+            <h3>商品名稱1</h3>
+            <p>簡介啦簡介啦簡介啦簡啦簡介啦簡介啦</p>
+        </div>
+    </div> 
+    <div class="item">
+        <div class="pic">
+            凸凸
+        </div>
+        <div class="intro">
+            <h3>商品名稱2</h3>
+            <p>簡介啦簡介啦簡簡介啦簡介啦簡介啦</p>
+        </div>
+    </div> 
+    <div class="item">
+        <div class="pic">
+            凸凸
+        </div>
+        <div class="intro">
+            <h3>商品名稱3</h3>
+            <p>簡介啦簡介啦簡簡介啦簡介啦簡介啦</p>
+        </div>
+    </div>     <div class="item">
+        <div class="pic">
+            凸凸
+        </div>
+        <div class="intro">
+            <h3>商品名稱4</h3>
+            <p>簡介啦簡介啦簡簡介啦簡介啦簡介啦</p>
+        </div>
+    </div>     <div class="item">
+        <div class="pic">
+            凸凸
+        </div>
+        <div class="intro">
+            <h3>商品名稱5</h3>
+            <p>簡介啦簡介啦簡簡介啦簡介啦簡介啦</p>
+        </div>
+    </div> 
+</div>
+
+</body>
+</html>
