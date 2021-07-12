@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        display: flex;
+        flex-wrap:wrap;
+        vertical-align: center;
+    }
+
+    .item{
+        width: 150px;
+        height: 100px;
+        background-color: gray;
+        font-size: 5px;
+        margin: 2px;
+    }
+
+    .item1{
+        z-index: 0;
+
+    }
+    .item2{
+        width: 60px;
+        height: 20px;
+        background-color: red;
+        position: relative;
+        left:-160px;
+        top:0px;
+    }
+
+    .flag{
+        width: 30px;
+        position: relative;
+        left:-20px;
+        top:0px;
+    }
+
+    .text{
+        padding: 10px 0;
+        text-align: center;
+        background-color: #fa0;
+        color:#fff;
+    }
+    .flag:after{
+        content: '';
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-left: 15px solid #fa0;
+        border-right: 15px solid #fa0;
+        border-bottom: 10px solid transparent
+    }
+
+</style>
+
+<body>
+    <div class="box">
+        <div class="item item1">商品內容</div>
+        <div class="flag">
+            <div class="text">00</div>
+        </div>
+        <div class="item item2">五倍蝦幣</div>  
+    </div> 
+</html>
