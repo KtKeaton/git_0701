@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        p{
+            background: #ccc;
+            padding-left: 1em;
+            position:relative;
+        }
+
+        p:before{
+            content: '';
+            position: absolute;
+            width:5px;
+            height: 5px;
+            background-color: #f00;
+            left: 5px;
+            right: 5px;
+            top: 5px;
+            border-radius: 50%;
+        }
+        
+    </style>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur eveniet esse soluta repellendus expedita hic, rem excepturi, nobis quasi culpa quis totam cum, officia debitis corrupti nisi sit neque.</p>
+</body>
+</html>
