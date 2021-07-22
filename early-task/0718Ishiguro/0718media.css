@@ -1,12 +1,13 @@
 .container{
     max-width: 1200px;
-    margin: auto;        
+    margin: auto;          
 }
 
 .content{
-    border: 1px solid brown;
-    margin: 10px;
-    
+    /* border: 2px solid brown; */
+    margin: 20px;
+    background-color: #fffcec;  
+    color:#613030
 }
 
 .photo{
@@ -17,18 +18,30 @@
 
 .caption{
     color:brown;
-    font-size: 16px;
-    padding: 10px;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     box-sizing: border-box;
 }
 
 h3{
     color: #613030;
-    font-size: 30px;
+    font-size: 38px;
 }
 
 p:first-letter{
     font-size : 200%;}
+
+a {
+    color:#f00;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#000;
+    text-decoration: underline;
+}
 
 @media screen and (min-width: 1200px){
     .content {
