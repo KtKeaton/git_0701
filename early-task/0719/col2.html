@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <link rel="stylesheet" href="grid.css"> -->
+<style>
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.item{
+    background-color: yellow;
+    padding: 10px;
+    border: 2px solid #f00;
+    height: 100%;
+    box-sizing:border-box
+}
+
+.row-cols-1 > *{width: 100%}
+.row-cols-2 > *{width: 50%}
+.row-cols-3 > *{width: 33.333333%}
+.row-cols-4 > *{width: 25%}
+.row-cols-5 > *{width: 20%}
+.row-cols-6 > *{width: 16.666666%}
+
+@media screen and (min-width:768px){
+    .row-cols-md-1 > *{width: 100%}
+    .row-cols-md-2 > *{width: 50%}
+    .row-cols-md-3 > *{width: 33.333333%}
+    .row-cols-md-4 > *{width: 25%}
+    .row-cols-md-5 > *{width: 20%}
+    .row-cols-md-6 > *{width: 16.666666%}
+}
+
+@media screen and (min-width:1024px){
+    .row-cols-lg-1 > *{width: 100%}
+    .row-cols-lg-2 > *{width: 50%}
+    .row-cols-lg-3 > *{width: 33.333333%}
+    .row-cols-lg-4 > *{width: 25%}
+    .row-cols-lg-5 > *{width: 20%}
+    .row-cols-lg-6 > *{width: 16.666666%}
+}
+
+@media screen and (min-width:1200px){
+    .row-cols-xl-1 > *{width: 100%}
+    .row-cols-xl-2 > *{width: 50%}
+    .row-cols-xl-3 > *{width: 33.333333%}
+    .row-cols-xl-4 > *{width: 25%}
+    .row-cols-xl-5 > *{width: 20%}
+    .row-cols-xl-6 > *{width: 16.666666%}
+}
+
+[class*="cols"] > *{
+    box-sizing: :border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="row row-cols-4">
+            <div class="col">
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est aliquam sint adipisci officia. Delectus obcaecati, voluptatem odio sapiente, placeat atque temporibus officiis voluptas aliquam eum dicta aut, consectetur nisi.</p>
+                </div>
+            </div>
+
+            <div class="col">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est aliquam sint adipisci officia. Delectus obcaecati, voluptatem odio sapiente, placeat atque temporibus officiis voluptas aliquam eum dicta aut, consectetur nisi.</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est aliquam sint adipisci officia. Delectus obcaecati, voluptatem odio sapiente, placeat atque temporibus officiis voluptas aliquam eum dicta aut, consectetur nisi.</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est aliquam sint adipisci officia. Delectus obcaecati, voluptatem odio sapiente, placeat atque temporibus officiis voluptas aliquam eum dicta aut, consectetur nisi.</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est aliquam sint adipisci officia. Delectus obcaecati, voluptatem odio sapiente, placeat atque temporibus officiis voluptas aliquam eum dicta aut, consectetur nisi.</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est aliquam sint adipisci officia. Delectus obcaecati, voluptatem odio sapiente, placeat atque temporibus officiis voluptas aliquam eum dicta aut, consectetur nisi.</p>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+
+</body>
+</html>
