@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-head{
+        background-color:pink;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        position: sticky;
+        top:0;
+    }
+
+    .logo img{
+        vertical-align: middle;
+    }
+
+    .main-nav a{
+        text-decoration: none;
+    }
+
+    @media screen and (max-width:767px){
+        .box{
+            background-color: yellow;
+            display:none;
+        }
+        .main-nav{
+            /* display: none; */
+            position: absolute;
+            top:100%;
+            left:-100%;
+            opacity:0;
+            width:100%;
+            background-color: #f58a50;
+        }
+
+        .main-nav a{
+            display: block;
+            padding: 10px;            
+            color: #fff;
+        }
+
+        .main-nav a:not(:first-child){
+            border-top: 1px solid #fff;
+        }
+
+        #menu-control:checked ~ .main-head .main-nav{
+            left:0;
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .btn-hm{
+            width: 40px;
+            height: 40px;
+            background-color:#aaa;
+            /* display: inline-block; */
+            position: relative;
+        }
+
+        .btn-hm .bar{
+            width:86%;
+            height: 2px;
+            background-color: #666;
+            display: block;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            /* bottom: 0; */
+            left: 0;
+            margin: auto;
+            transition: 1s;
+        }
+
+        .btn-hm .bar:first-child{
+            /* transform: translateY(-10px); */
+            top: 10px;
+        }
+
+        .btn-hm .bar:last-child{
+            /* transform: translateY(10px); */
+            top: 26px;
+        }
+
+        #menu-control:checked ~ .main-head .btn-hm .bar:first-child{
+            top: 18px;
+        }
+
+        #menu-control:checked ~ .main-head .btn-hm .bar:last-child{
+            top: 18px;
+        }
+    }
+    
+
+    @media screen and (min-width:768px){
+        .main-nav a{
+            display: inline-block;
+            padding:10px;
+            color: #000;            
+    } 
+ 
+    @media screen and (min-width:768px) and (hover:hover) {
+        .main-nav a:hover{
+            color: #f00;
+        }
+    }
+
+    
+
+</style>
+
+<body>
+    <input type="checkbox" name="" id="menu-control">
+    <header class="main-head">
+        <a href="#" class="logo">LOGO</a>
+
+        <label class="btn-hm" for="menu-control">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <nav class="main-nav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, distinctio commodi animi laborum vel quis dolore! Cum, ex libero? Atque fugit amet quis enim iure optio voluptas velit cumque eaque.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, distinctio commodi animi laborum vel quis dolore! Cum, ex libero? Atque fugit amet quis enim iure optio voluptas velit cumque eaque.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, distinctio commodi animi laborum vel quis dolore! Cum, ex libero? Atque fugit amet quis enim iure optio voluptas velit cumque eaque.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, distinctio commodi animi laborum vel quis dolore! Cum, ex libero? Atque fugit amet quis enim iure optio voluptas velit cumque eaque.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, distinctio commodi animi laborum vel quis dolore! Cum, ex libero? Atque fugit amet quis enim iure optio voluptas velit cumque eaque.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, distinctio commodi animi laborum vel quis dolore! Cum, ex libero? Atque fugit amet quis enim iure optio voluptas velit cumque eaque.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, distinctio commodi animi laborum vel quis dolore! Cum, ex libero? Atque fugit amet quis enim iure optio voluptas velit cumque eaque.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, distinctio commodi animi laborum vel quis dolore! Cum, ex libero? Atque fugit amet quis enim iure optio voluptas velit cumque eaque.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, distinctio commodi animi laborum vel quis dolore! Cum, ex libero? Atque fugit amet quis enim iure optio voluptas velit cumque eaque.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        margin:auto;
+        display:flex;
+        height: 500px;
+    }
+
+    .col{
+        width:50%;
+        box-sizing: border-box;
+        padding:0px 20px;
+        background-color:yellow;
+    }
+
+    .mv{        
+        width: 100%;
+        padding-top: 56.25%;
+        background-color: #aaa;
+        position: relative;
+        background-color: #bbb;
+    }
+
+    .mv iframe{
+        position: absolute;
+        top:0; 
+        width: 100%;
+        height: 100%;    
+    }
+
+    .txt{
+        color:blue;
+        font-size: 30px;
+
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="mv">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Q2Xbtmo-RjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+            </div>
+        </div>
+        <div class="col">
+            <div class="txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima facilis inventore eos maxime, reiciendis nostrum reprehenderit quo alias amet sed hic nisi minus eligendi, dicta, recusandae veritatis sit eum nulla.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

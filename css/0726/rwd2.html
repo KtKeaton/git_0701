@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 300px;
+        height: 300px;        
+    }
+ 
+    @media screen and (max-width:767px){
+        .box{
+            background-color: yellow;
+            display:none;
+        }
+        #menu_check:checked ~ .box{
+            display: block;
+        }
+
+    }
+
+    @media screen and (min-width:768px){
+        .box{
+            background-color: blue;
+        }        
+    }
+
+
+</style>
+
+<body>
+    <input type="checkbox" name="" id="menu_check">
+    <label for="menu_check">CLICK</label>    
+    <div class="box">132</div>
+</body>
+</html>
