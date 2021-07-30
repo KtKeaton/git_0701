@@ -1,0 +1,16 @@
+#productArea {
+    background-color: pink;
+}
+
+#a {
+    background-color: green;
+}
+
+#b {
+    background-color: yellow;
+}
+
+div {
+    padding: 20px;
+    margin: 10px;
+}
