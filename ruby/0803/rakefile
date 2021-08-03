@@ -1,0 +1,4 @@
+desc "打foo 印出bar"
+task (:foo) do
+  puts "bar"
+end
