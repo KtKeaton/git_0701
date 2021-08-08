@@ -1,0 +1,24 @@
+#main {
+  width: 600px;
+}
+
+#displayResult {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 50px;
+  background-color: lightblue;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+#buttonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 24px;
+  background-color: lightgray;
+  cursor: pointer;
+}
